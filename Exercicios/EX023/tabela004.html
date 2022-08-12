@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }   
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody td {
+            text-align: left;
+        }
+        .nome {
+            background-color: gray;
+        }
+        .resto {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="resto" span="3">
+            
+        </colgroup>
+        <thead>
+            <th scope="col">Nome</th>
+            <th scope="col">Gênero</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Junin</td>
+                <td>M</td>
+                <td>16</td>
+                <td>Trader</td>
+            </tr>
+            <tr>
+                <td>Cláudia</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Artista</td>
+            </tr>
+            <tr>
+                <td>Vinicios</td>
+                <td>HOMEM</td>
+                <td>19</td>
+                <td>Vagabundo</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>GAY</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Vinico</td>
+                <td>GAYZIN</td>
+                <td>16</td>
+                <td>Estudante</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
