@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastros.php" autocomplete="on">
+        <p>
+            <label for="iuse">Usuario:</label>
+            <input type="text" name="use" id="iuse" minlength="8" maxlength="20" size="10" autocomplete="username" placeholder="MIN 8 LETRAS">
+        </p>
+        <p>
+            <label for="isen">Senha :</label>
+            <input type="password" name="sen" id="isen" minlength="8" maxlength="20" size="10" autocomplete="current-password" placeholder="MIN 8 LETRAS">
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
