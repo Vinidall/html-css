@@ -2,101 +2,90 @@
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
-
 body {
     overflow-x: hidden;
+    display: block;
 }
-
 header {
     display: flex;
     background-color: #003C1B;
     justify-content: space-around;
     align-items: center;
     border-bottom: 2px solid white;
-    
 }
-
 #logo{
     display: flex;
     padding: 30px;
     align-items: center;
 }
-
 #logo h1 {
     color: white;
     padding-left: 15px;
     font-weight: 500;
     font-size: 1.7em;
 }
-
 #menu ul  {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
-
 #menu li {
     padding: 0px 25px;
     border-left: 2px solid white;
 }
-
 #menu a {
     text-decoration: none;
     color:white;
     transition-duration: .5s;
 }
-
 #menu a:hover {
     background-color: #005326;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     transition-duration: .5s;
 }
-
 #entra {
     background-color: #005326;
     padding: 10px;
     border-radius: 20px;
 }
-
 #trabalhe {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to right, #105B3D, #105B3D, #EC3237, #EC3237);
 }
-
 #trabalhe img {
-    width: 80vw;
+    width: 70vw;
 }
-
 main {
     background-color: #E3E3E3;
-    width: 100vw;
-    
 }
-
 #vagas{
-    display: block;
-    margin: auto;
-    
-    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
 }
-
+main #col1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 50px;
+}
 #vagas h3 {
     font-weight: normal;
     padding: 10px;
     font-size: 1.3em;
     color: #003C1B;
 }
-
 #vagas p {
     padding: 10px;
-    
     text-align: justify;
     color: #003C1B;
 }
-
 main h2 {
     color: #003C1B;
     padding-top: 40px;
@@ -104,23 +93,74 @@ main h2 {
     padding-left: 10px;
     font-weight: 600;
 }
-
 main ul {  
     list-style: none;
     padding: 10px;
-    
     font-size: 0.9em;
-    
 }
-
 hr {
-    
     margin-top: 10px;
     border:0;
     border-top: 1px solid #003C1B;
 }
-
 main p {
     padding: 10px;
-    
+}
+main #col2 {
+    height: 30%;
+    position: sticky;
+    top: 0px;
+    padding-top: 50px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#col2 h3 {
+    text-align: center;
+    font-size: 1.2em;
+    width: 70%;
+}
+main #col2 img{
+    width: 200px;
+    height: 200px;
+}
+
+#formulario form {
+    display: flex;
+    position: relative;
+    left: 13%;
+    flex-direction: column;
+}
+form input, select  {
+    width: 600px;
+    padding: 13px;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+}
+form #btn {
+    width: 300px;
+    background-color: #109c64;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+form #btn:hover {
+    background-color: #0a633f;
+    border-radius: 20px;
+    transition-duration: .5s;
+}
+
+footer {
+    background-color: #84151A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+footer img {
+    padding: 40px 0px;
 }
