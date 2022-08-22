@@ -139,6 +139,12 @@ form input, select  {
     border: none;
     border-radius: 3px;
 }
+
+form input:focus {
+    border: none;
+    outline: none;
+}
+
 form #btn {
     width: 300px;
     background-color: #109c64;
