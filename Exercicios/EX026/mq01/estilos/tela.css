@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Css tela */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: lightgray;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+    height: 90px;
+    border-bottom: 1px solid black;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    margin: 20px;
+    transition-duration: .5s;
+}
+header li:hover {
+    border-radius: 10px;
+    padding: 6px;
+    transition-duration: .5s;
+    color: white;
+    background-color: gray;
+}
+main {
+    width: 600px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main p {
+    padding: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
